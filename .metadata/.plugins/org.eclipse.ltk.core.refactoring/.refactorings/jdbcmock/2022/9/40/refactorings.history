@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jdbcmock/src/main/java/com/xworkz/Employee.java&apos; to &apos;EmployeeDTO.java&apos;" description="Rename resource &apos;Employee.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/xworkz/Employee.java" name="EmployeeDTO.java" stamp="1664510038502" updateReferences="true"/>
+</session>

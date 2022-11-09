@@ -1,0 +1,24 @@
+package com.xworkz.app.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.xworkz.app.dao.EmployeeDao;
+import com.xworkz.app.dto.Employee;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+
+	@Autowired
+	private EmployeeDao employeeDao;
+	public Employee save(Employee employee) {
+		System.out.println("-----------save Method :EmployeeServiceImpl----------------");
+		return employeeDao.save(employee);
+	}
+
+	public Employee searchByEmployeeName(String firstname) {
+		System.out.println("---------searchByEmployeeFisrtName method :EmployeeServiceImpl------------");
+		return employeeDao.searchByEmployeeName(firstname);
+	}
+
+}

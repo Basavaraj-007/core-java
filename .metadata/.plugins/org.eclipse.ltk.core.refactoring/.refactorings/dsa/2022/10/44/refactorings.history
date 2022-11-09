@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;datastructure.programs&apos; to &apos;StackPrograms&apos;&#x0D;&#x0A;- Original project: &apos;dsa&apos;&#x0D;&#x0A;- Original element: &apos;datastructure.programs&apos;&#x0D;&#x0A;- Renamed element: &apos;datastructure.StackPrograms&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;programs&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;datastructure{programs.java[programs" matchStrategy="1" name="StackPrograms" qualified="false" references="true" similarDeclarations="false" stamp="1666883431521" textual="false" version="1.0"/>
+</session>

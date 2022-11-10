@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;collections-framework/src/com/xworkz/collections/InterfaceMethods.java&apos;" deleteContents="false" description="Delete resource &apos;collections-framework/src/com/xworkz/collections/InterfaceMethods.java&apos;" element1="/collections-framework/src/com/xworkz/collections/InterfaceMethods.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1660050663862"/>
+</session>

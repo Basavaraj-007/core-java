@@ -1,0 +1,25 @@
+package com.xworkz.app.service;
+
+import java.util.List;
+
+import com.xworkz.app.entity.Bank;
+
+public class BankServiceImpl implements BankService {
+
+	public Bank saveBank(Bank bank) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Bank> findByBankName(String bankName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Bank updateBank(int bankId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

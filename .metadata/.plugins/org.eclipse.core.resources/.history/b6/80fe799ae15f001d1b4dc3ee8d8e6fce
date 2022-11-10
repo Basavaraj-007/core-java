@@ -1,0 +1,283 @@
+package allprograms;
+
+import java.util.Scanner;
+
+public class Programs {
+
+	public static void main(String [] args) {
+		
+		/*System.out.println("-------reverse string without inbuilt functions--------");
+		String str = "Automation";
+		System.out.println("String before reverse--" +str);
+		StringBuilder str2 = new StringBuilder();
+		str2.append(str);
+		str2=str2.reverse();
+		System.out.println("string after reverse--" +str2 );
+		System.out.println("---------------------------------------------------------");*/
+		
+		//without using revese() method-String
+	
+		/*System.out.println("----String using without reverse-------");
+		String str1="Mysore bangalore";
+		char chars[] = str1.toCharArray();
+		for(int i=chars.length-1; i&gt; =0; i--) {
+			System.out.println("" +chars[i]);
+			System.out.println("------------------------------------");
+		}*/
+		
+//--------------------------------------------------------------------------------------------------------------
+		
+		//swaping numbers using third variable 
+		/*System.out.println("----swaping using third variable----------");
+		int x,y,temp;
+		System.out.println("Enter x and y");
+		Scanner sc = new Scanner(System.in);
+		x=sc.nextInt();
+		y=sc.nextInt();
+		System.out.println("Before swapping --" + x + y);
+		temp = x;
+		x=y;
+		y=temp;
+		System.out.println("After swapping ---" + x + y);
+		System.out.println("------------------------------------------");*/
+		
+//---------------------------------------------------------------------------------------------------		
+		
+	/*	System.out.println("--------swaping using without third variable-----");
+		int x,y;
+		System.out.println("Enter the x and y value :");
+		Scanner sc = new Scanner(System.in);
+		x=sc.nextInt();
+		y=sc.nextInt();
+		System.out.println("Before Swapping\nx = "+x+"\ny = "+y);
+		x=x+y;
+		y=x-y;
+		x=x-y;
+		System.out.println("After swaping \nx = "+x+"\ny = "+y);
+		System.out.println("------------------------------------------------");*/
+		
+//--------------------------------------------------------------------------------------------------------		
+		// Program to reverse a number
+		/*System.out.println("----------reverse a number----");
+		int reverse=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number :-");
+		int i=sc.nextInt();
+		
+		while(i!=0) {
+			reverse = reverse*10 + i%10;
+			i=i/10;		
+		}
+		System.out.println("number after  reverse --" +reverse);
+		System.out.println("-----------------------------------------");*/
+//----------------------------------------------------------------------------------------------------
+		/* program to print Fibonacci series using Iterative methods
+		
+		System.out.println("--------Finobacci series------");
+		int first=0,second=1,result,i;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("finobacci series is --");
+		int n = sc.nextInt();
+		for( i=0;i<n;i++) {
+			if(i<=1)
+				result = i;
+			else {
+				result=first+second;
+				first=second;
+				second=result;
+			}
+			System.out.println(result);
+		}
+		System.out.println("-----------------------------");*/
+			
+//---------------------------------------------------------------------------------------------------		
+
+		//program to find the number is palindrome or not		
+	/*	System.out.println("----------Palindrome----------------------");
+		int temp,remainder,reverse=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number");
+		int originalNumber = sc.nextInt();
+		temp=originalNumber;
+		while(temp!=0) {
+			remainder = temp % 10;
+			reverse = reverse *10 + remainder;
+			temp /=10; 
+		}
+		if(originalNumber == reverse) {
+			System.out.println("the number is palindrome");
+		}
+		else {
+			System.out.println("the number is not palindrome");
+		}
+		
+		System.out.println("--------------------------------------------------");*/
+	
+//----------------------------------------------------------------------------------------------------------	
+	
+		//program to remove duplicate element from array
+		/*System.out.println("----------remove duplicate element in array----------");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of an array--");
+		int n = sc.nextInt();
+		int arr[] = new int[n];
+		int ar[] = new int[100];
+		
+		System.out.println("Enter " +n+ " array elements between 0 to 100");
+		for(int i=0;i<n;i++) {
+			arr[i]=sc.nextInt();			
+		}
+		System.out.println("array elements after removing");
+		for(int i=0;i<n;i++) {
+			ar[arr[i]]++;
+			if(ar[arr[i]]==1) {
+				System.out.println(arr[i]);
+			}
+		System.out.println("-------------------------------------------------------");
+		}*/
+		
+//----------------------------------------------------------------------------------------------------------		
+		
+		//pogram to left rotation of elements
+		/*System.out.println("-----Left Rotation on Array Elements by Two-------");
+		int temp;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Size of array :");
+		int size = sc.nextInt();
+		int arr[] = new int[size];
+		for(int i=0;i<size;i++) {
+			System.out.println("please give index value of "+ i +" : " );
+			arr[i] = sc.nextInt();
+		}
+		for(int i=0;i<2;i++) {
+			temp = arr[0]; 
+			for (int j=0;j<size-1;j++) {
+				arr[j]=arr[j+1];
+			}
+				arr[size-1]=temp;
+							
+		}
+		System.out.println("array after two left roatations-");
+		for(int i=0;i<size;i++) {
+			System.out.print(arr[i]+ "\t");
+		}
+		System.out.println("--------------------------------------------");*/
+		
+//---------------------------------------------------------------------------------------------------------------
+		
+	//	program for right rotation of array elements
+		
+	/*	System.out.println("----Right rotation of elements for array-----------");
+		int temp;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of array-");
+		int size =  sc.nextInt();
+		int arr[]=new int[size];
+		for(int i=0;i<size;i++) {		
+		System.out.println("please give values for index "+ i +" : ");
+		arr[i]=sc.nextInt();
+		}
+		for(int i=0;i<2;i++) {
+			temp=arr[size-1];
+			for(int j=size-1;j>0;j--) {
+				arr[j]=arr[j-1];
+			}
+			arr[0]=temp;
+		}
+		System.out.println("elements after left roataion");
+		for(int i=0;i<size;i++) {
+			System.out.print(arr[i]+ "\t");
+		}
+		System.out.println("-------------------------------------------------------");*/
+		
+//------------------------------------------------------------------------------------------
+		
+		//to print odd numbers from given array
+	/*	System.out.println("----to print odd numbers from array-------");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size--");
+		int size=sc.nextInt();
+		int arr[]=new int[size];
+		for(int i=0;i<size;i++) {
+		System.out.println("please give values for index "+ i +" : ");
+		arr[i]=sc.nextInt();
+		}
+		System.out.println("Odd Numbers from array are :");
+		for(int i=0;i<size;i++) {
+			if(arr[i]%2!=0) {
+				System.out.print(arr[i]+ "\t");
+			}
+			System.out.println("---------------------------------------------------");
+
+		}*/
+
+//------------------------------------------------------------------------------------------------
+		
+		//prime number or not
+		/*System.out.println("-----given number is prime or not---------");
+		int i=0,temp=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number :-");
+		int n = sc.nextInt();
+		for(i=2;i<(n/2);i++) {
+			if(n%i==0) {
+				temp=1;
+				break;
+			}
+		}
+			
+	if(temp==1) {
+		System.out.println("Number is not a prime ");
+	}
+	else {
+		System.out.println("Number is prime");
+	}
+	System.out.println("------------------------------------------------------------");*/
+
+//------------------------------------------------------------------------------------------------------
+		
+		//program to delete an element from array at given index.
+		/*System.out.println("----program to delete an array at given index----");
+		int loc;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of array :-");
+		int size = sc.nextInt();
+		int arr[]=new int[size];
+		for(int i=0;i<size;i++) {
+			System.out.println("please enter the value for index " + i + " : ");
+			arr[i]=sc.nextInt();
+		}
+		System.out.println("Enter the index  to delete element");
+		loc=sc.nextInt();
+		if(loc<=size-1) {
+		for(int i=loc;i<size-1;i++) {
+			arr[i]=arr[i+1];
+		}
+		size--;
+		}
+		else {
+			System.out.println("index not found");
+			System.exit(0);
+		}
+		System.out.println("element after deleting at index " + loc + "are :");
+		for(int i=0;i<size;i++) {
+			System.out.print(arr[i] +"\t");
+		}
+	System.out.println("----------------------------------------------------------------");*/
+	
+//-----------------------------------------------------------------------------------------------------------
+	
+	//program to delete an element from array at given value
+	System.out.println("--delete an element from array at given value---");
+	int temp,value;
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the size of array");
+	int size =sc.nextInt();
+	int arr[]=new int[size];
+	temp=size;
+	for(int i=0;i<size;i++) {
+		System.out.println("");
+	}
+
+}}

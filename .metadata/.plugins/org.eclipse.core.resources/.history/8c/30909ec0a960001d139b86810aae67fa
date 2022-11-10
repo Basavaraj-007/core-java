@@ -1,0 +1,19 @@
+package com.xworkz.app.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+public class MvcConfig {
+
+	public MvcConfig() {
+		System.out.println("-------Mvc Config-----");
+		}
+
+		@Bean
+		public ViewResolver setupViewResolver() {
+			System.out.println("---------setupViewResolver-----------");
+			return new InternalResourceViewResolver("/", ".jsp");
+		}
+		
+}

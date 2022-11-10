@@ -1,0 +1,72 @@
+package com.xworkz.app.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+//import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.xworkz.app.dto.EmployeeDto;
+import com.xworkz.app.service.EmployeeService;
+
+@Controller				//only jsp,css, html.
+//@RestController			//it'll return jason, rest api-
+//soap
+public class EmployeeController {
+	
+	public EmployeeController() {
+		System.out.println("----EmployeeConstructor----");	
+		}
+	@Autowired
+	 EmployeeService employeeService;	
+	
+	@RequestMapping(value ="save", method = RequestMethod.POST)
+	public ModelAndView saveEmployee(@ModelAttribute EmployeeDto employeeDto) {
+		System.out.println("-----saveEmployee------"+this.getClass());
+		EmployeeDto employeedto = employeeService.save(employeeDto);
+		System.out.println("-------employee saved----"+employeeDto.getFirstName());
+		return new ModelAndView("welcome");
+	}
+	
+	// @RequestMapping will get action name(url from UIpage)
+		// RequestMethod POST post type request
+		// @ModelAttribute will bind UI(form) data to Entity Class(Employee.java)
+		// ModelAndView is class that holds information
+		// of both UI and MOdel(that is Employee data)
+	
+	@RequestMapping(value ="searchbyname", method = RequestMethod.GET)
+	public ModelAndView searchByEmployeeFirstName(@RequestParam String firstName) {
+		//@ModelAttribute will bind ui object to entity object
+		
+		System.out.println("-------save employee----"+firstName);
+
+		List<EmployeeDto> lists=  employeeService.searchByEmployeeFirstName(firstName);
+		
+
+		return new ModelAndView("searchbyname", "employ", lists);
+	}
+
+	@RequestMapping(value = "searchById", method= RequestMethod.GET)
+	public ModelAndView searchByEmployeeId(@RequestParam int employeeId) {
+		
+		System.out.println("---------save employee-----"+id);
+		
+		List<EmployeeDto> lists=employeeService.searchByEmployeeId(id);
+		
+		
+		return new ModelAndView("searchById","employ",lists);
+		
+	}
+	
+}
+
+/*
+@ResuestingMapping will get the action name(url from UI Page)
+RequestMethod POST post type request,
+@ModelAndView  will bind 
+*/

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.xworkz.user.dto.Player.state&apos; in &apos;com.xworkz.user.dto.Player&apos;&#x0D;&#x0A;- Original project: &apos;jpa-demo10&apos;&#x0D;&#x0A;- Original element: &apos;com.xworkz.user.dto.Player.state&apos;&#x0D;&#x0A;- Getter method name: &apos;getState&apos;&#x0D;&#x0A;- Setter method name: &apos;setState&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;state&apos;" flags="589830" getter="getState" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.xworkz.user.dto{Player.java[Player^state" insertion="10" setter="setState" stamp="1663736290160" version="1.0" visibility="1"/>
+</session>

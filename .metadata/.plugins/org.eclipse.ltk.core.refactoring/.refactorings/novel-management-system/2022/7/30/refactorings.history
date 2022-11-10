@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.xworkz.novel.dto.NovelDTO.novelName&apos; in &apos;com.xworkz.novel.dto.NovelDTO&apos;&#x0D;&#x0A;- Original project: &apos;novel-management-system&apos;&#x0D;&#x0A;- Original element: &apos;com.xworkz.novel.dto.NovelDTO.novelName&apos;&#x0D;&#x0A;- Getter method name: &apos;getNovelName&apos;&#x0D;&#x0A;- Setter method name: &apos;setNovelName&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;novelName&apos;" flags="589830" getter="getNovelName" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;com.xworkz.novel.dto{NovelDTO.java[NovelDTO^novelName" insertion="-1" setter="setNovelName" stamp="1658459921177" version="1.0" visibility="1"/>
+</session>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="ciaz" class="DP2.Car">
+        <constructor-arg value="5433"/>
+                <constructor-arg value="ciaz"/>
+                <constructor-arg value="2022"/>
+                <constructor-arg value="12.5"/>
+        
+        </bean>
+        
+        <bean id="audi" class="DP2.Car">
+                <constructor-arg value="6542"/>
+                <constructor-arg value="audi"/>
+                <constructor-arg value="2022"/>
+                <constructor-arg value="80.5"/> 
+        
+        </bean>
+        
+        <bean id="raj" class="DP2.Person">
+        <constructor-arg value="101"/>
+		        <constructor-arg value="raj"/>
+		                <constructor-arg>
+		                <list>
+		                <ref bean="ciaz"/>
+		                <ref bean="audi"/>
+		                
+		                </list>
+		                </constructor-arg>
+		        
+		        
+		        
+        </bean>
+        
+</beans>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;block-management-system/src/com/xworkz/BlockTester.java&apos;" deleteContents="false" description="Delete resource &apos;block-management-system/src/com/xworkz/BlockTester.java&apos;" element1="/block-management-system/src/com/xworkz/BlockTester.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1658738158092"/>
-</session>

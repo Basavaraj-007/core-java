@@ -1,9 +1,0 @@
-package com.xworkz.app.service;
-
-import com.xworkz.app.dto.Employee;
-
-public interface EmployeeService {
-
-	public Employee save(Employee employee);
-	public Employee searchByEmployeeFirstName(String firstname);
-}
